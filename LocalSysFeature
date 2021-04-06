@@ -8,3 +8,13 @@
                             new SysFeatureTableView { ParentFeatureId = null, FeatureId = "MemoListPage",Path = "/:site/factoring/creditapptable/:id/relatedinfo/purchasetablepurchase/:id/relatedinfo/memotrans/"}
                         }
                     },
+                     {
+                ControllerName = "MessengerTable",
+                GroupId = "MESSENGER_TABLE",
+                FeatureType = FeatureType.PRIMARY,
+                SysFeatureTables = new List<SysFeatureTableView>()
+                        {
+                            new SysFeatureTableView { ParentFeatureId = null, FeatureId = "MessengerTableItemPage",Path = "/:site/masterinformation/messengertable/:id"},
+                            new SysFeatureTableView { ParentFeatureId = null, FeatureId = "MessengerTableListPage",Path = "/:site/masterinformation/messengertable/"}
+                        }
+            },
