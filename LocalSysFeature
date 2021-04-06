@@ -1,6 +1,10 @@
-start
-
-
-
-
-end
+                new SysFeatureGroupControllerMappingView {
+                    ControllerName = "CreditAppTable",
+                    GroupId = "FACTORING_CREDIT_APP_TABLE_PURCHASE_TABLE_PURCHASE_MEMO_TRANS",
+                    FeatureType = FeatureType.RELATEDINFO,
+                        SysFeatureTables = new List<SysFeatureTableView>()
+                        {
+                            new SysFeatureTableView { ParentFeatureId = null, FeatureId = "MemoItemPage",Path = "/:site/factoring/creditapptable/:id/relatedinfo/purchasetablepurchase/:id/relatedinfo/memotrans/:id"},
+                            new SysFeatureTableView { ParentFeatureId = null, FeatureId = "MemoListPage",Path = "/:site/factoring/creditapptable/:id/relatedinfo/purchasetablepurchase/:id/relatedinfo/memotrans/"}
+                        }
+                    },
